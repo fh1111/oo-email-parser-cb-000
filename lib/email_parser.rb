@@ -8,8 +8,8 @@ class EmailParser
   attr_accessor :list_of_emails
 
 
-  def self.create_from_string(list_of_emails)
-    EmailParser = self.new
+  def initialize(list_of_emails)
+
     EmailParser.list_of_emails =  list_of_emails
   end
 
