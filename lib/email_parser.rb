@@ -15,7 +15,7 @@ class EmailParser
   end
 
   def parse()
-    @list_of_emails.sub(", ", " ")
+    puts "#{@list_of_emails.sub(", ", " ")}"
   end
 
 
