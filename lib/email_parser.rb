@@ -9,15 +9,13 @@ class EmailParser
 
 
   def self.create_from_string(list_of_emails)
+    song = self.new
+    song.list_of_emails =  list_of_emails
+  end
 
-  song = self.new
-  song.list_of_emails =  list_of_emails
-
-
-
-  #puts "|#{song.name}|#{song.artist_name}|"
-
-end
+  def parse(list_of_emails)
+    puts "#{list_of_emails.split(",")}"
+  end
 
 
 end
