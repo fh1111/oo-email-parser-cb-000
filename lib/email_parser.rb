@@ -7,7 +7,6 @@ class EmailParser
 
   attr_accessor :list_of_emails
 
-
   def initialize(list_of_emails)
 
     @list_of_emails =  list_of_emails
@@ -15,11 +14,13 @@ class EmailParser
   end
 
   def parse()
+
     @list_of_emails.sub(", ", " ").split(" ")
+
   end
 
 
 end
 
 
-EmailParser.new("avi@test.com, arel@test.com arel@test.com").parse
+EmailParser.new("avi@test.com, arel@test.com test@avi.com, test@arel.com").parse
