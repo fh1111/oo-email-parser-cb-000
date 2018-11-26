@@ -10,7 +10,8 @@ class EmailParser
 
   def initialize(list_of_emails)
 
-    EmailParser.list_of_emails =  list_of_emails
+    @list_of_emails =  list_of_emails
+
   end
 
   def parse(list_of_emails)
