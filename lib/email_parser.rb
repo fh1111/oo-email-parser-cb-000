@@ -10,6 +10,7 @@ class EmailParser
   def parse (list_of_emails)
     array_emails = []
     array_emails = list_of_emails.split(",")
+    puts "#{array_emails}"
   end
 
 
