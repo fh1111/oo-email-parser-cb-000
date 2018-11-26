@@ -9,8 +9,8 @@ class EmailParser
 
 
   def self.create_from_string(list_of_emails)
-    song = self.new
-    song.list_of_emails =  list_of_emails
+    EmailParser = self.new
+    EmailParser.list_of_emails =  list_of_emails
   end
 
   def parse(list_of_emails)
