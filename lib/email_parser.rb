@@ -7,15 +7,17 @@ class EmailParser
 
   attr_accessor :list_of_emails
 
-  def initialize(list_of_emails)
 
-  end
+  def self.create_from_string(list_of_emails)
 
-  def parse (list_of_emails)
-    array_emails = []
-    array_emails = list_of_emails.split(",")
-    puts "#{array_emails}"
-  end
+  song = self.new
+  song.list_of_emails =  list_of_emails
+
+
+
+  #puts "|#{song.name}|#{song.artist_name}|"
+
+end
 
 
 end
