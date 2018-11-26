@@ -15,7 +15,7 @@ class EmailParser
   end
 
   def parse()
-    puts "#{@list_of_emails.split(",")}"
+    @list_of_emails.split(",")}
   end
 
 
