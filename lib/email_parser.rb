@@ -18,7 +18,6 @@ class EmailParser
     list = []
     list = @list_of_emails.gsub(", ", " ").split(" ")
     list.uniq
-
   end
 
 
