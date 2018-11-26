@@ -15,7 +15,7 @@ class EmailParser
   end
 
   def parse()
-    @list_of_emails.delete(" ").split(",")
+    @list_of_emails.sub(", ", " ")
   end
 
 
